@@ -20,6 +20,7 @@ namespace HomeCloudApi.Services.FileService
 		{
 			_httpContextAccessor = httpContextAccessor;
 		}
+
         public ServiceResponse<string> Upload(List<IFormFile> files, string subDirectory)
         {
             ServiceResponse<string> serviceResponse = new ServiceResponse<string>();
@@ -53,6 +54,32 @@ namespace HomeCloudApi.Services.FileService
 
             return serviceResponse;
         }
+
+        public (string fileType, byte[] archiveData, string archiveName) FetchFiles(string subDirectory)
+        {
+            var zipName = $"archive-{DateTime.Now.ToString("yyyy_MM_dd-HH_mm_ss")}.zip";
+
+            var files = Directory.GetFiles(Path.Combine("C:\\homecloud\\", subDirectory)).ToList();
+                                                        
+            using (var memoryStream = new MemoryStream())
+            {
+                using (var archive = new ZipArchive(memoryStream, ZipArchiveMode.Create, true))
+                {
+                    files.ForEach(file =>
+                    {
+                        var theFile = archive.CreateEntry(file);
+                        using (var streamWriter = new StreamWriter(theFile.Open()))
+                        {
+                            streamWriter.Write(File.ReadAllText(file));
+                        }
+
+                    });
+                }
+
+                return ("application/zip", memoryStream.ToArray(), zipName);
+            }
+        }
+
 
         //Private helpers
         private string SizeConverter(long bytes)
