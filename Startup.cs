@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AutoMapper;
+using HomeCloudApi.Services.DirectoryService;
 using HomeCloudApi.Services.FileService;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -29,7 +31,11 @@ namespace HomeCloudApi
         {
             services.AddControllers();
 
+            services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+
             services.AddScoped<IFileService, FileService>();
+
+            services.AddScoped<IDirectoryService, DirectoryService>();
 
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
         }
