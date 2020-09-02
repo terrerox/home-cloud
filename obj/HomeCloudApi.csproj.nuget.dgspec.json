@@ -45,7 +45,7 @@
             },
             "AutoMapper.Extensions.Microsoft.DependencyInjection": {
               "target": "Package",
-              "version": "(, )"
+              "version": "[8.0.1, )"
             }
           },
           "imports": [

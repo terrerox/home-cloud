@@ -34,3 +34,6 @@ C:\Users\terre\Desktop\Projects\HomeCloudApi\obj\Debug\netcoreapp3.1\staticwebas
 C:\Users\terre\Desktop\Projects\HomeCloudApi\obj\Debug\netcoreapp3.1\staticwebassets\HomeCloudApi.StaticWebAssets.xml
 C:\Users\terre\Desktop\Projects\HomeCloudApi\obj\Debug\netcoreapp3.1\HomeCloudApi.dll
 C:\Users\terre\Desktop\Projects\HomeCloudApi\obj\Debug\netcoreapp3.1\HomeCloudApi.pdb
+C:\Users\terre\Desktop\Projects\HomeCloudApi\bin\Debug\netcoreapp3.1\AutoMapper.dll
+C:\Users\terre\Desktop\Projects\HomeCloudApi\bin\Debug\netcoreapp3.1\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\terre\Desktop\Projects\HomeCloudApi\obj\Debug\netcoreapp3.1\HomeCloudApi.csproj.CopyComplete
