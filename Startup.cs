@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AutoMapper;
+using HomeCloudApi.Services.DirectoryService;
 using HomeCloudApi.Services.FileService;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -27,9 +29,13 @@ namespace HomeCloudApi
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddControllers();
+            services.AddControllers().AddJsonOptions(x => x.JsonSerializerOptions.IgnoreNullValues = true);
+
+            services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
             services.AddScoped<IFileService, FileService>();
+
+            services.AddScoped<IDirectoryService, DirectoryService>();
 
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
         }

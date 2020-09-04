@@ -1,9 +1,12 @@
+using HomeCloudApi.Entities;
 using HomeCloudApi.Models;
+using HomeCloudApi.Services.DirectoryService;
 using HomeCloudApi.Services.FileService;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Http.Extensions;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.FileProviders;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -15,13 +18,15 @@ namespace HomeCloudApi.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class FileController : ControllerBase
+    public class ApiController : ControllerBase
     {
         public static IFileService _fileService;
+        public static IDirectoryService _directoryService;
 
-        public FileController(IFileService FileService)
+        public ApiController(IFileService FileService, IDirectoryService DirectoryService)
         {
             _fileService = FileService;
+            _directoryService = DirectoryService;
         }
 
         [HttpPost("upload")]
@@ -30,6 +35,7 @@ namespace HomeCloudApi.Controllers
             return Ok(_fileService.Upload(files, subDirectory));
         }
 
+<<<<<<< HEAD:Controllers/FileController.cs
         [HttpGet("download/{subDirectory}")]
         public IActionResult DownloadFiles(string subDirectory)
         {
@@ -45,5 +51,18 @@ namespace HomeCloudApi.Controllers
             }
         }
 
+=======
+        [HttpGet]
+        public IActionResult GetDirectories([FromForm]Storage storage)
+        { 
+            return Ok(_directoryService.GetDirectories(storage));
+        }
+
+        [HttpGet("{directory}")]
+        public IActionResult GetDirectory([FromForm]Storage storage, string directory)
+        { 
+            return Ok(_directoryService.GetDirectory(storage, directory));
+        }
+>>>>>>> 7aaf2ec9eff2c511adf586dae040a4dd34f4cb23:Controllers/ApiController.cs
     }
 }
