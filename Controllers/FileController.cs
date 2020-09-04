@@ -30,5 +30,20 @@ namespace HomeCloudApi.Controllers
             return Ok(_fileService.Upload(files, subDirectory));
         }
 
+        [HttpGet("download/{subDirectory}")]
+        public IActionResult DownloadFiles(string subDirectory)
+        {
+            try
+            {
+                var (fileType, archiveData, archiveName) = _fileService.FetchFiles(subDirectory);
+
+                return File(archiveData, fileType, archiveName);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new {message = ex.Message});
+            }
+        }
+
     }
 }
