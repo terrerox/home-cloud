@@ -35,7 +35,6 @@ namespace HomeCloudApi.Controllers
             return Ok(_fileService.Upload(files, subDirectory));
         }
 
-<<<<<<< HEAD:Controllers/FileController.cs
         [HttpGet("download/{subDirectory}")]
         public IActionResult DownloadFiles(string subDirectory)
         {
@@ -51,7 +50,6 @@ namespace HomeCloudApi.Controllers
             }
         }
 
-=======
         [HttpGet]
         public IActionResult GetDirectories([FromForm]Storage storage)
         { 
@@ -63,6 +61,5 @@ namespace HomeCloudApi.Controllers
         { 
             return Ok(_directoryService.GetDirectory(storage, directory));
         }
->>>>>>> 7aaf2ec9eff2c511adf586dae040a4dd34f4cb23:Controllers/ApiController.cs
     }
 }
