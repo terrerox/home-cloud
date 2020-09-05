@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\terre\\Desktop\\Projects\\HomeCloudApi\\HomeCloudApi.csproj": {}
+    "C:\\Users\\terre\\Desktop\\Projects\\HomeCloud\\server\\HomeCloudApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\terre\\Desktop\\Projects\\HomeCloudApi\\HomeCloudApi.csproj": {
+    "C:\\Users\\terre\\Desktop\\Projects\\HomeCloud\\server\\HomeCloudApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\terre\\Desktop\\Projects\\HomeCloudApi\\HomeCloudApi.csproj",
+        "projectUniqueName": "C:\\Users\\terre\\Desktop\\Projects\\HomeCloud\\server\\HomeCloudApi.csproj",
         "projectName": "HomeCloudApi",
-        "projectPath": "C:\\Users\\terre\\Desktop\\Projects\\HomeCloudApi\\HomeCloudApi.csproj",
+        "projectPath": "C:\\Users\\terre\\Desktop\\Projects\\HomeCloud\\server\\HomeCloudApi.csproj",
         "packagesPath": "C:\\Users\\terre\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\terre\\Desktop\\Projects\\HomeCloudApi\\obj\\",
+        "outputPath": "C:\\Users\\terre\\Desktop\\Projects\\HomeCloud\\server\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
