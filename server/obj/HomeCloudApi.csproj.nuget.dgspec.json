@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\terre\\Desktop\\Projects\\HomeCloud\\server\\HomeCloudApi.csproj": {}
+    "c:\\Users\\terre\\Desktop\\Projects\\HomeCloud\\server\\HomeCloudApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\terre\\Desktop\\Projects\\HomeCloud\\server\\HomeCloudApi.csproj": {
+    "c:\\Users\\terre\\Desktop\\Projects\\HomeCloud\\server\\HomeCloudApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\terre\\Desktop\\Projects\\HomeCloud\\server\\HomeCloudApi.csproj",
+        "projectUniqueName": "c:\\Users\\terre\\Desktop\\Projects\\HomeCloud\\server\\HomeCloudApi.csproj",
         "projectName": "HomeCloudApi",
-        "projectPath": "C:\\Users\\terre\\Desktop\\Projects\\HomeCloud\\server\\HomeCloudApi.csproj",
+        "projectPath": "c:\\Users\\terre\\Desktop\\Projects\\HomeCloud\\server\\HomeCloudApi.csproj",
         "packagesPath": "C:\\Users\\terre\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\terre\\Desktop\\Projects\\HomeCloud\\server\\obj\\",
+        "outputPath": "c:\\Users\\terre\\Desktop\\Projects\\HomeCloud\\server\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -38,6 +38,16 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[10.0.0, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

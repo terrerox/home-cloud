@@ -34,6 +34,7 @@ C:\Users\terre\Desktop\Projects\HomeCloudApi\obj\Debug\netcoreapp3.1\staticwebas
 C:\Users\terre\Desktop\Projects\HomeCloudApi\obj\Debug\netcoreapp3.1\staticwebassets\HomeCloudApi.StaticWebAssets.xml
 C:\Users\terre\Desktop\Projects\HomeCloudApi\obj\Debug\netcoreapp3.1\HomeCloudApi.dll
 C:\Users\terre\Desktop\Projects\HomeCloudApi\obj\Debug\netcoreapp3.1\HomeCloudApi.pdb
+<<<<<<< HEAD:server/obj/Debug/netcoreapp3.1/HomeCloudApi.csproj.FileListAbsolute.txt
 C:\Users\terre\Desktop\Projects\HomeCloud\server\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
 C:\Users\terre\Desktop\Projects\HomeCloud\server\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\Users\terre\Desktop\Projects\HomeCloud\server\bin\Debug\netcoreapp3.1\appsettings.json
@@ -52,3 +53,8 @@ C:\Users\terre\Desktop\Projects\HomeCloud\server\obj\Debug\netcoreapp3.1\staticw
 C:\Users\terre\Desktop\Projects\HomeCloud\server\obj\Debug\netcoreapp3.1\staticwebassets\HomeCloudApi.StaticWebAssets.xml
 C:\Users\terre\Desktop\Projects\HomeCloud\server\obj\Debug\netcoreapp3.1\HomeCloudApi.dll
 C:\Users\terre\Desktop\Projects\HomeCloud\server\obj\Debug\netcoreapp3.1\HomeCloudApi.pdb
+=======
+C:\Users\terre\Desktop\Projects\HomeCloudApi\bin\Debug\netcoreapp3.1\AutoMapper.dll
+C:\Users\terre\Desktop\Projects\HomeCloudApi\bin\Debug\netcoreapp3.1\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\terre\Desktop\Projects\HomeCloudApi\obj\Debug\netcoreapp3.1\HomeCloudApi.csproj.CopyComplete
+>>>>>>> release/hc:obj/Debug/netcoreapp3.1/HomeCloudApi.csproj.FileListAbsolute.txt
